@@ -2,7 +2,7 @@
 ## Q: What is React?
 
 ReactJS is an open-source front-end JavaScript library that is used for building reusable user interfaces, for single-page applications.
-made by facebook and fortune500 companies are used it.
+developed by facebook and fortune500 companies are used it.
 
 ---
 
@@ -99,21 +99,18 @@ A key is a special attribute you should include when mapping over arrays to rend
 
 ## Q: What is Virtual DOM?
 
-The Virtual DOM is an in-memory representation of Real DOM (similar to DOM but sort of imaginary). The representation of a UI is kept in memory and synced with the `real DOM`.
-<br>
-It's a step that happens between the render function being called and the displaying of elements on the screen. This entire process is known as <b>`Reconciliation`</b>.
+* The virtual DOM is a lightweight copy of the actual DOM  that is stored in the computer's memory. React uses it to improve performance by updating only the changed parts of the actual DOM
+*  React uses two sets of virtual DOMs – one to store the current state and another to store the previous state of objects
 
 ### **NUTSHELL**
 
 ⚠️ Reconciliation in React refers to the process of comparing the virtual representation of a component’s UI (Virtual DOM) with the actual DOM and determining if and how the real DOM should be updated to match the virtual representation.
 
-
-
 ---
 
 **`Reconciliation`** : It is a algorithm uses by react to differentiate between two tress {} to determine which part to be changed
-	two tress --> 1 . Browser dom wala treee 
-		            2.  ek virtual dom wala tree jo create root se bnta hai
+	two tress --> 1 . one to store the current state 
+		            2.  another to store the previous state of objects
 
 
 **`React Fibre`** : It is the implementation of core algorithm which is basically happening behind the scene of virtual DOM.
@@ -124,13 +121,13 @@ It's a step that happens between the render function being called and the displa
 
 ## Q: What are controlled components?
 
-A component that controls the input elements within the forms, i.e, every state change will have an handler function. That means, the displayed data is always in sync with the state of the component.
+ Controlled components are components where the form data is controlled by React state. The input elements receive their current value from the state and have their value updated through a callback function
 
----
+ ---
 
 ## Q: What are Higher-Order Components?
 
-A higher-order component (HOC) is a function that takes a component and returns a new component.
+A higher-order component (HOC) is a function that takes a component and returns a new component  with additional features or props
 
 ---
 
@@ -170,6 +167,10 @@ It's a common pattern or practice in React for a component to return multiple el
 
 ## Hooks
 
+ React hooks are predefine functions that allows the functional component to do dynamic changes and implement lifecycle methods.
+* React Hooks must be called only at the top level. It is not allowed to call them inside the nested functions, loops, or conditions.
+* It is allowed to call the Hooks only from the React Function Components
+
 ### useStates 
 
 * It is used to manage the state. Its accept one value and return array of two things [state  , fxn ]. It observe it if states are change then it rerender that component
@@ -183,6 +184,9 @@ It's a common pattern or practice in React for a component to return multiple el
 * if dependency array diya hi nhi toh kuch bhi change hoga toh component rerender hoga ,  agar dependency array toh diya hai but khali hai toh component Runs only on the first render. baki runs any time any dependency value changes
 * it returns a cleanup fxn  {timer wala code yaad kro }
 
+### useReducer
+* It is used for managing complex state logic in React applications. It is an alternative to useState
+
 ### useRef
 
 * It is useful for accessing or focusing elements.
@@ -190,6 +194,7 @@ It's a common pattern or practice in React for a component to return multiple el
 
 ### memo
 * agar kisi fxnn ya component ko memo se wrap kr diya toh wo component tabhi rerender hoga jbb uske props mein changes honge
+*  memo is a higher-order component that memoizes the rendering of a functional component, preventing unnecessary re-renders if the props have not changed
 
 ### useMemo
 * It is use to memoize the value 
@@ -197,6 +202,9 @@ It's a common pattern or practice in React for a component to return multiple el
 
 ### useCallback
 * Memoizes functions to prevent unnecessary re-renders.
+
+### useContext
+* It is used to access the value of a React context within a functional component
 
 
 
@@ -232,3 +240,17 @@ It's a common pattern or practice in React for a component to return multiple el
 * lazy loading
 * propdrilling
 * context api
+* comments in react
+* custom hooks
+* react routing { Browser Router , Routes , Route , Link}
+* Phases of the Component Lifecycle in React
+* Methods of the Component Lifecycle in React
+* what is the cors policy
+* Explain Strict Mode in React.
+* 
+---
+
+
+*  Lazy loading is a technique where components or modules are loaded only when they are actually needed, improving initial load times
+*  Prop drilling occurs when props are passed down through multiple levels of components. It can be avoided by using context or state management libraries like Redux
+*  
