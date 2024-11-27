@@ -252,3 +252,31 @@ It's a common pattern or practice in React for a component to return multiple el
 *  A custom hook is a simple function in React that starts with ` use (e.g., useCustomHook)` . we can use built-in hooks inside it.
 * CORS (Cross-Origin Resource Sharing) is a browser security rule that controls which websites can access resources (like data or APIs) from another website. It prevents unauthorized data sharing between different websites.
 * React Strict Mode is a tool in React that helps identify potential problems in your code. It doesn't show anything on the screen but runs extra checks in the background during development.
+
+---
+
+## Lifecycle
+
+React components go through three main phases during their life:
+
+### Mounting (Creating the component):
+* In this phase the component is being created and inserted into the DOM (web page).
+-> Key methods:
+
+* `constructor()`: Initializes the component.
+* `render()`: Renders the component's UI.
+* `componentDidMount()`: Called after the component is added to the DOM
+
+### Updating (When something changes):
+* In this phase a component’s data (state or props) changes, causing it to re-render.
+-> Key methods:
+
+* `shouldComponentUpdate()`: Decides if the component should re-render.
+* `render()`: Re-renders the UI based on updated data.
+* `componentDidUpdate()`: Called after the component updates.
+
+### Unmounting (Removing the component):
+* In this phase the component is removed from the DOM.
+-> Key method:
+
+* `componentWillUnmount()`: Cleans up before the component is removed (like canceling timers or network requests).
