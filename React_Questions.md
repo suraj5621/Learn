@@ -102,11 +102,6 @@ A key is a special attribute you should include when mapping over arrays to rend
 * The virtual DOM is a lightweight copy of the actual DOM  that is stored in the computer's memory. React uses it to improve performance by updating only the changed parts of the actual DOM
 *  React uses two sets of virtual DOMs – one to store the current state and another to store the previous state of objects
 
-### **NUTSHELL**
-
-⚠️ Reconciliation in React refers to the process of comparing the virtual representation of a component’s UI (Virtual DOM) with the actual DOM and determining if and how the real DOM should be updated to match the virtual representation.
-
----
 
 **`Reconciliation`** : It is a algorithm uses by react to differentiate between two tress {} to determine which part to be changed
 	two tress --> 1 . one to store the current state 
@@ -240,7 +235,7 @@ It's a common pattern or practice in React for a component to return multiple el
 * lazy loading
 * propdrilling
 * context api
-* comments in react
+* comments in react  --> {normally react mein // or /* something */  but in jsx mein  {// single line}  or {/* multiline */}}
 * custom hooks
 * react routing { Browser Router , Routes , Route , Link}
 * Phases of the Component Lifecycle in React
@@ -252,5 +247,8 @@ It's a common pattern or practice in React for a component to return multiple el
 
 
 *  Lazy loading is a technique where components or modules are loaded only when they are actually needed, improving initial load times
-*  Prop drilling occurs when props are passed down through multiple levels of components. It can be avoided by using context or state management libraries like Redux
-*  
+*  Props drilling is the process of passing data (props) from a parent component to a deeply nested child component through multiple intermediate components
+*  Context API is a feature in React that allows you to share state or data between components without passing props manually through every level of the component tree. It creates a global state that can be accessed directly by any component.
+*  A custom hook is a simple function in React that starts with ` use (e.g., useCustomHook)` . we can use built-in hooks inside it.
+* CORS (Cross-Origin Resource Sharing) is a browser security rule that controls which websites can access resources (like data or APIs) from another website. It prevents unauthorized data sharing between different websites.
+* React Strict Mode is a tool in React that helps identify potential problems in your code. It doesn't show anything on the screen but runs extra checks in the background during development.
