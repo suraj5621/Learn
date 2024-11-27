@@ -104,7 +104,7 @@ A key is a special attribute you should include when mapping over arrays to rend
 *  React uses two sets of virtual DOMs – one to store the current state and another to store the previous state of objects
 
 
-**`Reconciliation`** : It is a algorithm uses by react to differentiate between two tress {} to determine which part to be changed
+**`Reconciliation`** : It is a algorithm which is used to differentiate between two tress {} to determine which part to be changed
 	two tress --> 1 . one to store the current state 
 		            2.  another to store the previous state of objects
 
