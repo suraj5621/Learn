@@ -59,6 +59,7 @@ As you can make dynamic changes with the help of hooks with Function components 
 * functional component have high readability as compare to class component
 * It has less boiler-plate code
 * No this keyword binding
+* There is no constructor
 * Reuseability
 * High performance
   
